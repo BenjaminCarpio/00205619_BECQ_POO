@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="01f322a1-e896-4f80-9b3f-02f24687dc35" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1ZDyfjZr3zB1mfxJuWvOWtpvaU8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.BECQx00205619.Main" />
+      <module name="Ejercicio 03" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01f322a1-e896-4f80-9b3f-02f24687dc35" name="Default Changelist" comment="" />
+      <created>1584388064197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584388064197</updated>
+      <workItem from="1584388069364" duration="1522000" />
+      <workItem from="1584492679665" duration="562000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="183" key="FileChooserDialogImpl" timestamp="1584388908389">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="183" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1584388908389" />
+    <state width="1556" height="217" key="GridCell.Tab.0.bottom" timestamp="1584493245502">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="217" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584493245502" />
+    <state width="1556" height="217" key="GridCell.Tab.0.center" timestamp="1584493245502">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="217" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584493245502" />
+    <state width="1556" height="217" key="GridCell.Tab.0.left" timestamp="1584493245502">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="217" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584493245502" />
+    <state width="1556" height="217" key="GridCell.Tab.0.right" timestamp="1584493245502">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="217" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584493245502" />
+    <state x="182" y="49" key="new project wizard" timestamp="1584390082785">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="182" y="49" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1584390082785" />
+  </component>
+</project>
