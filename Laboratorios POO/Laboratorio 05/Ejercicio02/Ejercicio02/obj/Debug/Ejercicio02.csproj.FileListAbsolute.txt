@@ -1,0 +1,5 @@
+C:\Users\Benjamin\RiderProjects\Ejercicio02\Ejercicio02\obj\Debug\Ejercicio02.csprojAssemblyReference.cache
+C:\Users\Benjamin\RiderProjects\Ejercicio02\Ejercicio02\bin\Debug\Ejercicio02.exe
+C:\Users\Benjamin\RiderProjects\Ejercicio02\Ejercicio02\bin\Debug\Ejercicio02.pdb
+C:\Users\Benjamin\RiderProjects\Ejercicio02\Ejercicio02\obj\Debug\Ejercicio02.exe
+C:\Users\Benjamin\RiderProjects\Ejercicio02\Ejercicio02\obj\Debug\Ejercicio02.pdb
