@@ -25,25 +25,66 @@ namespace Ejercicio01
                     Console.WriteLine("Favor ingresar algo valido.");
                 }
 
-                switch (opcion) {
-                case 1:
-                    try
-                    {
-                        AgregarEvaluacion();
-                    }
-                    catch (PercentageExceedsTheLimits e)
-                    {
-                        Console.WriteLine("El porcentaje ingresado supera al 100%, volviendo al menu...");
-                    }catch (FormatException e)
-                    {
-                        Console.WriteLine("Favor ingresar algo valido.");
-                    }
-                    break;
-                case 2: MostrarEvaluaciones(); break;
-                case 3: EliminarEvaluacion(); break;
-                case 4: CalcularNota.CalculandoNota(listaDeEvaluacion); continuar = false; break;
-                case 0: break;    //Para el try catch
-                default: Console.WriteLine("Opcion invalida."); break;
+                switch (opcion)
+                {
+                    case 1:
+                        try
+                        {
+                            AgregarEvaluacion();
+                        }
+                        catch (PercentageExceedsTheLimits e)
+                        {
+                            Console.WriteLine("El porcentaje ingresado supera al 100%, volviendo al menu...");
+                        }
+                        catch (FormatException e)
+                        {
+                            Console.WriteLine("Favor ingresar algo valido.");
+                        }
+
+                        break;
+                    case 2:
+                        MostrarEvaluaciones();
+                        break;
+                    case 3:
+                        EliminarEvaluacion();
+                        break;
+                    case 4:
+                        if (verificadorPorcentaje == 100){
+                            Console.WriteLine(
+                                "Se ingreso el 100% de las calificaciones, procediendo a evaluar nota....."); 
+                        }
+                        else
+                        {
+                            Boolean continuarSubMenu = true;
+                            do
+                            {
+                                Console.WriteLine(
+                                    "No se llego al 100% del porcentaje\nDesea agregar mas evaluaciones?(S/N)");
+                                String masEvaluaciones = Console.ReadLine();
+                                if (masEvaluaciones.ToLower() == "s")
+                                {
+                                    Console.WriteLine("Volviendo al menu para agregar más evaluaciones......");
+                                    continuarSubMenu = false;
+                                }
+                                else if (masEvaluaciones.ToLower() == "n")
+                                {
+                                    Console.WriteLine("Se procedera a calcular la nota con las evaluaciones ingresadas." + 
+                                                      "El " + verificadorPorcentaje + "% se evaluara con las calificaciones que ingrese" + 
+                                                      " mientras que el resto de evaluaciones se tomaran como un 0 de calificacion ");
+                                    CalcularNota.CalculandoNota(listaDeEvaluacion);
+                                    continuarSubMenu = false;
+                                    continuar = false;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Opcion invalida, intente nuevamente.");
+                                }
+                            } while (continuarSubMenu);
+                        }
+
+                        break; 
+                    case 0: break;    //Para el try catch
+                    default: Console.WriteLine("Opcion invalida."); break;
                 }
             } while (continuar);
         }
@@ -97,7 +138,7 @@ namespace Ejercicio01
         {
             if (listaDeEvaluacion.Count == 0)
             {
-                Console.WriteLine("La lista esta vacia.");
+                Console.WriteLine("La lista no contiene ninguna evaluacion ingresada.");
             }
             else
             {

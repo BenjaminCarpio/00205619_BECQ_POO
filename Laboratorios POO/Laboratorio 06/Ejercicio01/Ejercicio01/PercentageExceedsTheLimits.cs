@@ -6,7 +6,6 @@ namespace Ejercicio01
     {
         public PercentageExceedsTheLimits(string message) : base(message)
         {
-            
         }
     }
 }
