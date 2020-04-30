@@ -52,6 +52,8 @@ namespace Ejercicio01
                         if (verificadorPorcentaje == 100){
                             Console.WriteLine(
                                 "Se ingreso el 100% de las calificaciones, procediendo a evaluar nota....."); 
+			                            			CalcularNota.CalculandoNota(listaDeEvaluacion);
+
                         }
                         else
                         {
