@@ -12,6 +12,7 @@ namespace Ejercicio01
 
             bool continuar = true;
             int opcion;
+            double notaFinal;
             do
             {
                 Console.WriteLine(Menu());
@@ -50,10 +51,9 @@ namespace Ejercicio01
                         break;
                     case 4:
                         if (verificadorPorcentaje == 100){
-                            Console.WriteLine(
-                                "Se ingreso el 100% de las calificaciones, procediendo a evaluar nota....."); 
-			                            			CalcularNota.CalculandoNota(listaDeEvaluacion);
-
+                            Console.WriteLine("Se ingreso el 100% de las calificaciones, procediendo a evaluar nota....."); 
+                            notaFinal = CalcularNota.CalculandoNota(listaDeEvaluacion);
+                            Console.WriteLine("La nota final es: " + notaFinal);
                         }
                         else
                         {
@@ -73,17 +73,17 @@ namespace Ejercicio01
                                     Console.WriteLine("Se procedera a calcular la nota con las evaluaciones ingresadas." + 
                                                       "El " + verificadorPorcentaje + "% se evaluara con las calificaciones que ingrese" + 
                                                       " mientras que el resto de evaluaciones se tomaran como un 0 de calificacion ");
-                                    CalcularNota.CalculandoNota(listaDeEvaluacion);
+                                    notaFinal = CalcularNota.CalculandoNota(listaDeEvaluacion);
+                                    Console.WriteLine("La nota final es: " + notaFinal);
                                     continuarSubMenu = false;
-                                    continuar = false;
                                 }
                                 else
                                 {
                                     Console.WriteLine("Opcion invalida, intente nuevamente.");
                                 }
+                                continuar = false;
                             } while (continuarSubMenu);
                         }
-
                         break; 
                     case 0: break;    //Para el try catch
                     default: Console.WriteLine("Opcion invalida."); break;

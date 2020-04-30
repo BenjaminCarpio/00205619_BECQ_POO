@@ -5,7 +5,7 @@ namespace Ejercicio01
 {
     public static class CalcularNota
     {
-        public static void CalculandoNota(List<Evaluacion> calcular)
+        public static double CalculandoNota(List<Evaluacion> calcular)
         {
             int porcentaje;
             double notaObtenida, notaFinal = 0;
@@ -18,7 +18,9 @@ namespace Ejercicio01
                 porcentaje = evaluacion.Porcentaje;
                 notaFinal += (notaObtenida * porcentaje);
             }
-            Console.WriteLine("La nota final es: " + (notaFinal / 100));
+
+            notaFinal = notaFinal / 100;
+            return notaFinal;
         }
         
     }
