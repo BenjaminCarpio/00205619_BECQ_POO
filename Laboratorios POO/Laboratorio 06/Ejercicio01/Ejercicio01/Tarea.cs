@@ -13,7 +13,7 @@ namespace Ejercicio01
 
         public override string ToString()
         {
-            return $"{base.ToString()}, {nameof(fechaEntrega)}: {fechaEntrega}";
+            return $"{base.ToString()}, {nameof(fechaEntrega)}: {fechaEntrega.ToShortDateString()}";
         }
     }
 }

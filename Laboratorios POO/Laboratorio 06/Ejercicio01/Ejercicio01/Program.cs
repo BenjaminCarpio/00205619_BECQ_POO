@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Ejercicio01 
 {
     internal class Program
     {
         static List<Evaluacion> listaDeEvaluacion = new List<Evaluacion>();
-        private static int verificadorPorcentaje = 0;
+        private static int verificadorPorcentaje = 0, porcentajeEvaluacion = 0;
         public static void Main(string[] args)
         {
 
@@ -36,10 +37,12 @@ namespace Ejercicio01
                         catch (PercentageExceedsTheLimits e)
                         {
                             Console.WriteLine("El porcentaje ingresado supera al 100%, volviendo al menu...");
+                            verificadorPorcentaje -= porcentajeEvaluacion;
                         }
                         catch (FormatException e)
                         {
                             Console.WriteLine("Favor ingresar algo valido.");
+                            verificadorPorcentaje -= porcentajeEvaluacion;
                         }
 
                         break;
@@ -50,41 +53,56 @@ namespace Ejercicio01
                         EliminarEvaluacion();
                         break;
                     case 4:
-                        if (verificadorPorcentaje == 100){
-                            Console.WriteLine("Se ingreso el 100% de las calificaciones, procediendo a evaluar nota....."); 
-                            notaFinal = CalcularNota.CalculandoNota(listaDeEvaluacion);
-                            Console.WriteLine("La nota final es: " + notaFinal);
-                        }
-                        else
+                        try
                         {
-                            Boolean continuarSubMenu = true;
-                            do
+                            if (verificadorPorcentaje == 100)
                             {
-                                Console.WriteLine(
-                                    "No se llego al 100% del porcentaje\nDesea agregar mas evaluaciones?(S/N)");
-                                String masEvaluaciones = Console.ReadLine();
-                                if (masEvaluaciones.ToLower() == "s")
-                                {
-                                    Console.WriteLine("Volviendo al menu para agregar más evaluaciones......");
-                                    continuarSubMenu = false;
-                                }
-                                else if (masEvaluaciones.ToLower() == "n")
-                                {
-                                    Console.WriteLine("Se procedera a calcular la nota con las evaluaciones ingresadas." + 
-                                                      "El " + verificadorPorcentaje + "% se evaluara con las calificaciones que ingrese" + 
-                                                      " mientras que el resto de evaluaciones se tomaran como un 0 de calificacion ");
-                                    notaFinal = CalcularNota.CalculandoNota(listaDeEvaluacion);
-                                    Console.WriteLine("La nota final es: " + notaFinal);
-                                    continuarSubMenu = false;
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Opcion invalida, intente nuevamente.");
-                                }
+                                Console.WriteLine("Se ingreso el 100% de las calificaciones, procediendo a evaluar nota.....");
+                                notaFinal = CalcularNota.CalculandoNota(listaDeEvaluacion);
+                                Console.WriteLine("La nota final es: " + notaFinal);
                                 continuar = false;
-                            } while (continuarSubMenu);
+                            }
+                            else
+                            {
+                                Boolean continuarSubMenu = true;
+                                do
+                                {
+                                    Console.WriteLine("No se llego al 100% del porcentaje\nDesea agregar mas evaluaciones?(S/N)");
+                                    String masEvaluaciones = Console.ReadLine();
+                                    if (masEvaluaciones.ToLower() == "s")
+                                    {
+                                        Console.WriteLine("Volviendo al menu para agregar más evaluaciones......");
+                                        continuarSubMenu = false;
+                                    }
+                                    else if (masEvaluaciones.ToLower() == "n")
+                                    {
+                                        Console.WriteLine(
+                                            "Se procedera a calcular la nota con las evaluaciones ingresadas." +
+                                            "El " + verificadorPorcentaje +
+                                            "% se evaluara con las calificaciones que ingrese" +
+                                            " mientras que el resto de evaluaciones se tomaran como un 0 de calificacion ");
+                                        notaFinal = CalcularNota.CalculandoNota(listaDeEvaluacion);
+                                        Console.WriteLine("La nota final es: " + notaFinal);
+                                        continuarSubMenu = false;
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Opcion invalida, intente nuevamente.");
+                                    }
+
+                                    continuar = false;
+                                } while (continuarSubMenu);
+                            }
                         }
-                        break; 
+                        catch (FormatException e)
+                        {
+                            Console.WriteLine("Favor ingresar algo valido.");
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Volviendo al menu");
+                        }
+                        break;
                     case 0: break;    //Para el try catch
                     default: Console.WriteLine("Opcion invalida."); break;
                 }
@@ -104,7 +122,7 @@ namespace Ejercicio01
            int opcionEvaluacion = Convert.ToInt32(Console.ReadLine());
            Console.WriteLine("Porcentaje disponible: " + (100 - verificadorPorcentaje));
            Console.Write("\nIngrese el porcentaje que tendra la evaluacion: ");
-           int porcentajeEvaluacion = Convert.ToInt32(Console.ReadLine());
+           porcentajeEvaluacion = Convert.ToInt32(Console.ReadLine());
            verificadorPorcentaje += porcentajeEvaluacion;
            if (verificadorPorcentaje <= 100)
            {
@@ -123,7 +141,7 @@ namespace Ejercicio01
                        listaDeEvaluacion.Add(new Laboratorio(porcentajeEvaluacion, nombreEvaluacion, tipoLaboratorio));
                        break;
                    case 3:
-                       Console.Write("Indique la fecha de entrega para la terea: ");
+                       Console.Write("Indique la fecha de entrega para la terea con el formate (Mes/Dia/Anio): ");
                        DateTime fechaEntrega = Convert.ToDateTime(Console.ReadLine());
                        listaDeEvaluacion.Add(new Tarea(porcentajeEvaluacion, nombreEvaluacion, fechaEntrega));
                        break;
@@ -131,7 +149,6 @@ namespace Ejercicio01
            }
            else
            {
-               verificadorPorcentaje -= porcentajeEvaluacion;
                throw new PercentageExceedsTheLimits("");
            }
         }
@@ -155,18 +172,50 @@ namespace Ejercicio01
         {
             Console.Write("Ingrese el nombre de la evaluacion a eliminar:");
             String nombreEliminar = Console.ReadLine();
+            String opcion;
+            int contadorPrincipal = 0,contador = 0, eliminar=0, porcentajeAuxiliar = 0;
             bool eliminado = false;
             foreach (Evaluacion ev in listaDeEvaluacion)
             {
-                if (ev.Nombre.Equals(nombreEliminar)) {
-                    listaDeEvaluacion.Remove(ev);
-                    eliminado = true;
+                if (ev.Nombre.Equals(nombreEliminar, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    contador++;
+                    eliminar = contadorPrincipal;
+                    porcentajeAuxiliar = ev.Porcentaje;
                 }
+                contadorPrincipal++;
             }
-            if (eliminado) {
-                Console.WriteLine("Evaluacion eliminada exitosamente.");
-            }else{
-                Console.WriteLine("No se encontro la evaluacion.");
+            if (contador == 0) {
+                Console.WriteLine("No se encontro la evaluacion");
+            }else if(contador == 1)
+            {
+                listaDeEvaluacion.RemoveAt(eliminar);
+                verificadorPorcentaje -= porcentajeAuxiliar;
+                Console.WriteLine("Se elimino exitosamente ");
+            }else if (contador > 1)
+            {
+                contadorPrincipal = 0;
+                contador = 0;
+                Console.WriteLine("Hay mas de 1 evaluacion con ese nombre, favor especifique cual evaluacion es la que desea eliminar.");
+                foreach (var eva in listaDeEvaluacion )
+                {
+                    if (eva.Nombre.Equals(nombreEliminar, StringComparison.InvariantCultureIgnoreCase)) {
+                        Console.WriteLine(eva + "\n Esta es la evaluacion que desea eliminar? (S/N)");
+                        opcion = Console.ReadLine();
+                        if(opcion != null && (opcion.Equals("s") || opcion.Equals("S"))){
+                            porcentajeAuxiliar = eva.Porcentaje;
+                            verificadorPorcentaje -= porcentajeAuxiliar;
+                            contador = contadorPrincipal;
+                            Console.WriteLine("La evaluacion se elimino con exito");
+                            break;
+                        }
+                        if(opcion != null && (opcion.Equals("n") || opcion.Equals("N"))){
+                            Console.WriteLine("\nBuscando siguiente evaluacion....\n");   
+                        }
+                    }
+                    contadorPrincipal++;
+                }
+                listaDeEvaluacion.RemoveAt(contador);
             }
         }
     }
