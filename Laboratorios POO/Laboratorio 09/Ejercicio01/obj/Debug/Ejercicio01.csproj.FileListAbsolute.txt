@@ -1,0 +1,11 @@
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\bin\Debug\Ejercicio01.exe.config
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\bin\Debug\Ejercicio01.pdb
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.csprojAssemblyReference.cache
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.Properties.Resources.resources
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.csproj.GenerateResource.cache
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.exe
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.pdb
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.Login.resources
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.Form1.resources
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.Register.resources
+C:\Users\Benjamin\RiderProjects\Labooxd\Ejercicio01\obj\Debug\Ejercicio01.csproj.CopyComplete
