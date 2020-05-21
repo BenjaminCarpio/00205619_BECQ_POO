@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3047e6d6-e2e8-4429-9e2a-6bec570371dc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Inscription.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Inscription.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AddSignature.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AddSignature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RegisterStudent.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RegisterStudent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConectionDB.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ViewData.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ViewData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/RegisterStudent.Designer.cs" />
+        <option value="$PROJECT_DIR$/AddSignature.Designer.cs" />
+        <option value="$PROJECT_DIR$/ViewData.Designer.cs" />
+        <option value="$PROJECT_DIR$/Form1.Designer.cs" />
+        <option value="$PROJECT_DIR$/Form1.cs" />
+        <option value="$PROJECT_DIR$/RegisterStudent.cs" />
+        <option value="$PROJECT_DIR$/AddSignature.cs" />
+        <option value="$PROJECT_DIR$/Inscription.Designer.cs" />
+        <option value="$PROJECT_DIR$/Inscription.cs" />
+        <option value="$PROJECT_DIR$/ViewData.cs" />
+        <option value="$PROJECT_DIR$/ConectionDB.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1c8r4KRlITcgkHuKxSD4xK1VNnD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Ejercicio 01" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Ejercicio 01.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3047e6d6-e2e8-4429-9e2a-6bec570371dc" name="Default Changelist" comment="" />
+      <created>1589920870243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589920870243</updated>
+      <workItem from="1589920878410" duration="5616000" />
+      <workItem from="1589926552313" duration="885000" />
+      <workItem from="1589927496246" duration="2025000" />
+      <workItem from="1589945934940" duration="3455000" />
+      <workItem from="1589949596203" duration="760000" />
+      <workItem from="1590095882716" duration="3012000" />
+      <workItem from="1590099798105" duration="93000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state width="1876" height="128" key="GridCell.Tab.0.bottom" timestamp="1590099908525">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="128" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1590099908525" />
+    <state width="1556" height="128" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.175.1600.860@1920.175.1600.860" timestamp="1590097972294" />
+    <state width="1876" height="128" key="GridCell.Tab.0.center" timestamp="1590099908525">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="128" key="GridCell.Tab.0.center/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1590099908525" />
+    <state width="1556" height="128" key="GridCell.Tab.0.center/0.0.1920.1040/1920.175.1600.860@1920.175.1600.860" timestamp="1590097972294" />
+    <state width="1876" height="128" key="GridCell.Tab.0.left" timestamp="1590099908525">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="128" key="GridCell.Tab.0.left/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1590099908525" />
+    <state width="1556" height="128" key="GridCell.Tab.0.left/0.0.1920.1040/1920.175.1600.860@1920.175.1600.860" timestamp="1590097972294" />
+    <state width="1876" height="128" key="GridCell.Tab.0.right" timestamp="1590099908525">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="128" key="GridCell.Tab.0.right/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1590099908525" />
+    <state width="1556" height="128" key="GridCell.Tab.0.right/0.0.1920.1040/1920.175.1600.860@1920.175.1600.860" timestamp="1590097972294" />
+  </component>
+</project>
