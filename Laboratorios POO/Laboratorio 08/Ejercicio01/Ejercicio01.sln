@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio01", "Ejercicio01.csproj", "{A7DF2DBF-699D-4EFD-BAA7-0145CDE6F74F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio01", "Ejercicio01.csproj", "{5A190F30-A53F-438A-91F4-F1E0762E2F01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7DF2DBF-699D-4EFD-BAA7-0145CDE6F74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7DF2DBF-699D-4EFD-BAA7-0145CDE6F74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7DF2DBF-699D-4EFD-BAA7-0145CDE6F74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7DF2DBF-699D-4EFD-BAA7-0145CDE6F74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A190F30-A53F-438A-91F4-F1E0762E2F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A190F30-A53F-438A-91F4-F1E0762E2F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A190F30-A53F-438A-91F4-F1E0762E2F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A190F30-A53F-438A-91F4-F1E0762E2F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

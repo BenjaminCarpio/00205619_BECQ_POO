@@ -1,53 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ejercicio01
 {
     public partial class Form1 : Form
     {
+        private UserControl current;
+        private Register rg = new Register();
         public Form1()
         {
             InitializeComponent();
-            comboBox1.DataSource = new List<String>() {"Aqua", "Purpura", "Naranja"};
+            current = login1;
+            DoubleBuffered = true;
         }
 
-        private void buttonRed_Click(object sender, EventArgs e)
+        private void login1_Load(object sender, EventArgs e)
         {
-            BackColor = Color.Red;
-        }
-
-        private void buttonBlue_Click(object sender, EventArgs e)
-        {
-            BackColor = Color.Blue;
-        }
-
-        private void buttonGreen_Click(object sender, EventArgs e)
-        {
-            BackColor = Color.Green;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BackColor = ColorTranslator.FromHtml("#" + textBox1.Text);
+            tableLayoutPanel1.Controls.Remove(current);
+            tableLayoutPanel1.Controls.Add(login1, 1, 0);
+            current = login1;
+            tableLayoutPanel1.SetRowSpan(current,4);
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String aqua = "#00ffd0", purpura = "#7e2181", naranja = "#ff6f00";
-            switch(comboBox1.SelectedIndex)
-            {
-                case 0:
-                    BackColor = ColorTranslator.FromHtml(aqua);
-                    break;
-                case 1:
-                    BackColor = ColorTranslator.FromHtml(purpura);
-                    break;
-                case 2: 
-                    BackColor = ColorTranslator.FromHtml(naranja); 
-                    break;
-            }
+            tableLayoutPanel1.Controls.Remove(current);
+            tableLayoutPanel1.Controls.Add(rg, 1, 0);
+            current = rg;
+            tableLayoutPanel1.SetRowSpan(current,4);        
         }
     }
 }
